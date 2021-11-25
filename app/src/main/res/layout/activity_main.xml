@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nome" />
+
+            <EditText
+                android:id="@+id/idade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Idade(ex.: 23)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/tamanho"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/xs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="XS" />
+
+                    <RadioButton
+                        android:id="@+id/s"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="S" />
+
+                    <RadioButton
+                        android:id="@+id/m"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="M" />
+
+                    <RadioButton
+                        android:id="@+id/xl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="XL" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/prova"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton5k"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5K" />
+
+                <RadioButton
+                    android:id="@+id/radioButton15sK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15sK" />
+
+                <RadioButton
+                    android:id="@+id/radioButton21K"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="21K" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:checked="false"
+            android:text="Associado" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_calcular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calcular" />
+
+                    <TextView
+                        android:id="@+id/textView_resultado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Roboto"
+                        android:text="A pagar: €-,--"
+                        android:textSize="16sp"
+                        style="@style/oMeuEstilo"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_confirmar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="Confirmar" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
